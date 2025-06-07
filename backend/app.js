@@ -15,10 +15,10 @@ const UserRouter = require('./routes/UserRoutes');
 const TaskRouter = require('./routes/TaskRoutes');
 
 // endpoint handling
-app.get('/', (req, res) => { // checking the server is running
+app.get('/', (req, res) => { 
     console.log("In the server...");
     res.json({ message: "In the server..." })
-})
+}); // checking the server is running
 
 app.use('/user', UserRouter);
 app.use('/task', TaskRouter);
